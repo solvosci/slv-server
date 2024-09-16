@@ -1,0 +1,33 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_restrict_user_fields
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-17 08:50+0000\n"
+"PO-Revision-Date: 2024-09-17 10:53+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: base_restrict_user_fields
+#: model:ir.model.fields,field_description:base_restrict_user_fields.field_res_users__unrestrict_fields
+msgid "Don't restrict fields"
+msgstr "No restringir campos sensibles"
+
+#. module: base_restrict_user_fields
+#: model:res.groups,name:base_restrict_user_fields.group_user_mgmt_unrestrict_fields
+msgid "User management: don't restrict sensitive fields"
+msgstr "Gestión de usuarios: no restringir campos sensibles"
+
+#. module: base_restrict_user_fields
+#: model:ir.model,name:base_restrict_user_fields.model_res_users
+msgid "Users"
+msgstr "Usuarios"
