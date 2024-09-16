@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_users_form_restrict" model="ir.ui.view">
+        <field name="name">res.users.form.restrict</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='login']" position="before">
+                <field name="unrestrict_fields" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='login']" position="attributes">
+                <attribute name="attrs">{'readonly': [('unrestrict_fields', '=', False), ('id', '!=', False)]}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_users_simple_form_restrict" model="ir.ui.view">
+        <field name="name">res.users.simple.form.restrict</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_simple_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='login']" position="before">
+                <field name="unrestrict_fields" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='login']" position="attributes">
+                <attribute name="attrs">{'readonly': [('unrestrict_fields', '=', False), ('id', '!=', False)]}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

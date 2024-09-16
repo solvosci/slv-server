@@ -1,0 +1,1 @@
+Restricts editing of sensitive fields in res.users. Now only it apply to field login, but allow to apply other fields
