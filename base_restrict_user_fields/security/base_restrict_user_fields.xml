@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
         <record id="group_user_mgmt_unrestrict_fields" model="res.groups">
             <field name="name">User management: don't restrict sensitive fields</field>
             <field name="category_id" ref="base.module_category_hidden"/>
-            <field name="implied_ids" eval="[(4, ref('base.group_system'))]"/>
+            <field name="implied_ids" eval="[Command.link(ref('base.group_system'))]"/>
         </record>
     </data>
 </odoo>
